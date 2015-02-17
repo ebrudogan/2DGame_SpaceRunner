@@ -10,7 +10,7 @@ public class camerafollow : MonoBehaviour {
 
 		if (character.transform.position.x > 10.308f)
 		{
-			transform.position= new Vector3(character.transform.position.x, -1.9666f ,0f);
+			transform.position= new Vector3(character.transform.position.x, 0f ,0f);
 		}
 	
 	}

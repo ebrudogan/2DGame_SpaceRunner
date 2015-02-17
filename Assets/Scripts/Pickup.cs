@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class Pickup : MonoBehaviour
 {
 
-	public Text scoretext;						// The amount of cans we wil pick up
-	private float score; 
-	public Text scoretextfinal;
+	//public Text scoretext;						// The amount of cans we wil pick up
+	private float score = 0; 
+	//public Text scoretextfinal;
 	public GameObject particle ;
 	public AudioClip CollectSound ;
 
@@ -16,6 +16,7 @@ public class Pickup : MonoBehaviour
 	//This method is called when an object (with RigidBody2D and Collider2D) collides with this
 	void OnTriggerEnter2D(Collider2D col)
 	{
+		Debug.Log("OnTriggerEnter2D");
 		// If the player collided with a fuel can
 		if(col.gameObject.tag == "Can")
 		{
@@ -24,9 +25,10 @@ public class Pickup : MonoBehaviour
 			col.gameObject.SetActive (false);
 			// give a score
 			score++;
+			Debug.Log("Score: " + score);
 			// 
-			scoretext.text = "" + score;
-			scoretextfinal.text = "" + score;
+			//scoretext.text = "" + score;
+			//scoretextfinal.text = "" + score;
 			audio.PlayOneShot(CollectSound);
 			Instantiate (particle, col.transform.position, col.transform.rotation );
 

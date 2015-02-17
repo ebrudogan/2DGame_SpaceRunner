@@ -8,7 +8,7 @@ public class PlayerDied : MonoBehaviour
 
     private Animator anim;
     public GameObject endmenu;
-    public GameObject ingamedisplay;
+    //public GameObject ingamedisplay;
     public GameObject buttonup;
     public GameObject buttondown;
     public AudioClip died;
