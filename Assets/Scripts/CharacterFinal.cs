@@ -26,10 +26,12 @@ public class CharacterFinal : MonoBehaviour
 
 	//The update method is called many times per seconds
 	void Update(){
-		if(Input.GetButtonDown("Fire1")){
+		if(Input.GetButtonDown("Fire1") && grounded){
 			jump = true;
 			grounded = false;
 			anim.SetTrigger("Jump");
+		} else if(Input.GetButtonDown("Fire2")){
+			Slide();
 		}
 	}
 

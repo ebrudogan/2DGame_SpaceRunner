@@ -8,7 +8,7 @@ public class PlayerDied : MonoBehaviour
 
     private Animator anim;
     public GameObject endmenu;
-    //public GameObject ingamedisplay;
+    public GameObject ingamedisplay;
     public GameObject buttonup;
     public GameObject buttondown;
     public AudioClip died;
@@ -34,9 +34,8 @@ public class PlayerDied : MonoBehaviour
             ingamedisplay.SetActive(false);
             buttonup.SetActive(false);
             buttondown.SetActive(false);
-
             audio.PlayOneShot(died, 3.0F);
-
         }
+
     }
 }
