@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Pickup : MonoBehaviour
 {
 
-	//public Text scoretext;						// The amount of cans we wil pick up
+	public Text scoretext;						// The amount of cans we wil pick up
 	private float score = 0; 
 	//public Text scoretextfinal;
 	public GameObject particle ;
@@ -26,8 +26,8 @@ public class Pickup : MonoBehaviour
 			// give a score
 			score++;
 			Debug.Log("Score: " + score);
-			// 
-			//scoretext.text = "" + score;
+			 
+			scoretext.text = "" + score;
 			//scoretextfinal.text = "" + score;
 			audio.PlayOneShot(CollectSound);
 			Instantiate (particle, col.transform.position, col.transform.rotation );

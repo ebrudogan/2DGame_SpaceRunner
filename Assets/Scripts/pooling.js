@@ -21,7 +21,7 @@ function OnTriggerEnter2D (other: Collider2D) {
 	}
 
 
-	otherpref.transform.position.x = otherpref.transform.position.x + (45.5);
+	otherpref.transform.position.x = otherpref.transform.position.x + (91.2);
 	otherpref.transform.position.y = 0;
 
 	
