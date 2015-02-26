@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class characteraudio : MonoBehaviour {
+public class CharacterAudio : MonoBehaviour {
 
 	public AudioClip footstep;
 	public AudioClip jump;

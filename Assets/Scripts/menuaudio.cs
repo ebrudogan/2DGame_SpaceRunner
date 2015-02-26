@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class menuaudio : MonoBehaviour {
+public class MenuAudio : MonoBehaviour {
 
 	public AudioClip menupopup;
 

@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class restart : MonoBehaviour {
+public class Restart : MonoBehaviour {
 
 	public void RestartGame()
 	{

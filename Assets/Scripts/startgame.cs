@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class startgame : MonoBehaviour {
+public class StartGame : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

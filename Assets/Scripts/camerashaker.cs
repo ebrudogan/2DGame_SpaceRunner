@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class camerashaker : MonoBehaviour {
+public class CameraShaker : MonoBehaviour {
 
 
 	public Animator anim;					// The animator that controls the camera animations
